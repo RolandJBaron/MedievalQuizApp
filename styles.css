@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    border-radius: 50px;
+  }
+  html {
+    background-color: gray;
+    z-index: -1;
+    height: 10%;
+    width: 100%;
+    background: url("https://media.gettyimages.com/id/1193078256/de/foto/mittelalterlicher-ritter-in-r%C3%BCstung-mit-flagge-und-schwert-in-der-n%C3%A4he-von-ruinen.jpg?s=612x612&w=0&k=20&c=OFGZJavFR1v0kh5YEXV9NQOsOx86Ur-TwL1heQl-Cuw=") fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  button {
+    font-family: inherit;
+    font-size: 100%;
+    border: none;
+    background-color: rgb(40, 40, 217);
+    color: black;
+    margin-bottom: 15px;
+  }
+  button:hover, button:focus {
+    background-color: rgb(65, 123, 177);
+    box-shadow: 4px 4px gray;
+    cursor: pointer;
+  }
+  header {
+    border: 1px solid black;
+    background-color: rgba(236, 236, 236, 0.425);
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 190px;
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+  }
+  header h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 50px;
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+  }
+  
+  .score-count {
+    font-size: 190%;
+  }
+  .question-count {
+    font-size: 190%;
+  }
+  
+  header p {
+    font-size: 120%;
+  }
+  .submit-buttons {
+    background: none;
+    width: 65%;
+    margin-top: 15px;
+  }
+  .ready-start {
+    font-size: 160%;
+    background-color: rgba(225, 153, 79, .85);
+    text-align: center;
+    color: black;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .start-quiz {
+    height: auto;
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .question-container {
+    width: 50%;
+    position: relative;
+    left: 120px;
+    background: none;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .results-box {
+    width: 100%;
+    background-color: color blue;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .results-box p {
+    background: none;
+    font-size: 25.92px;
+  }
+  .main-field {
+    background: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2px;
+  }
+  .question-header {
+    background-color: rgba(225, 153, 79, .85);
+    font-size: 120%;
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+  }
+  .question-box label {
+    width: 100%;
+    font-size: 130%;
+    float: left;
+    clear: none;
+    height: 80px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+  .question-box label p {
+    text-align: center;
+  }
+  .question-box header p {
+    text-align: center;
+  }
+  .question-box label:hover {
+    cursor: pointer;
+  }
+  .question-box label:focus {
+    background-color: rgb(248, 247, 247);
+    color: black;
+    text-shadow: none;
+  }
+  .submit-answer {
+    width: 85%;
+    height: 60px;
+    left: 77px;
+    top: 10px;
+    border: 1px solid black; 
+  }
+  .wrong p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .next-question {
+    width: 100%;
+    font-size: 26px;
+    height: 60px;
+    border: 1px solid white; 
+  }
+  .not-selected {
+    background-color: rgba(193, 133, 74, 0.85);
+    color: black;
+    
+  }
+  .user-selection-color {
+    background-color: rgb(229, 214, 214);
+    color: black;
+    text-shadow: none;
+  }
+  .question-box #js-choice-one, #js-choice-two, #js-choice-three, #js-choice-four {
+    margin: 0;
+  }
+  .question-box {
+    width: 100%;
+    background: none;
+    font-size: 135%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .question-content {
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .question-display-number {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .selection:hover {
+    background-color: rgb(184, 29, 29);
+    color: white;
+    text-shadow: none;
+  }
+  .final-button {
+    margin-top: 25px;
+  }
+  @media screen and (max-width: 2000px) {
+    header {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .question-container {
+      position: static;
+      width: 100%;
+    }
+    .question-box label {
+      height: 80px;
+      margin-bottom: 0px;
+      justify-content: center;
+      font-size: 140%;
+    }
+    .question-header {
+      text-align: center;
+    }
+    header {
+      flex-direction: column;
+      margin-bottom: 20px;
+      font-size: 100%;
+    }
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      text-align: center;
+    }
+  
+    }
+    .score-count {
+      font-size: 160%;
+      margin: 0;
+    }
+    .question-count {
+      font-size: 160%;
+      margin: 0;
+    }
+
+  @media screen and (max-width: 600px) {
+    header h1 {
+      text-align: center;
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    .question-header {
+      text-align: center;
+      font-size: 100%;
+    }
+    .question-box label {
+      height: 70px;
+      font-size: 100%;
+    }
+  .question-box label p {
+    text-align: center;
+  }
+    .results-box {
+      
+      margin-bottom: 20px;
+    }
+    .score-count {
+      font-size: 160%;
+    }
+    .score-count {
+      font-size: 160%;
+    }
+  }
+
+ 
